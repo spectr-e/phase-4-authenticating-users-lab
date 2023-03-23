@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
@@ -37,3 +37,5 @@ end
 gem "faker", "~> 2.18"
 
 gem "active_model_serializers", "~> 0.10.12"
+
+gem "foreman", "~> 0.87.2"
